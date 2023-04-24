@@ -1,0 +1,60 @@
+@import url(./global.css);
+
+.cookie-gallery-container {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.cookie-gallery-scroll-wrapper {
+  display: flex;
+  /* width: calc(100% + 30px); */
+  /* overflow-x: auto; */
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* Duplicar el contenido para crear el efecto de infinito */
+.cookie-gallery-scroll-wrapper::before,
+.cookie-gallery-scroll-wrapper::after {
+  content: "";
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.cookie-gallery-scroll-wrapper::before {
+  margin-right: 16px;
+}
+
+.cookie-gallery-scroll-wrapper::after {
+  margin-left: 16px;
+}
+
+.cookie-card {
+  flex: 0 0 auto;
+  width: calc((70% - 95px) / 3);
+  min-width: 250px;
+  height: auto;
+  padding: 15px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  background-color: var(--color-blanco);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  scroll-snap-align: center;
+}
+
+.cookie-card h3 {
+  text-align: center;
+}
+
+.cookie-card p {
+  text-align: start;
+  letter-spacing: 3px;
+}
+
+.cookie-card-img {
+  width: auto;
+  height: 20vw;
+}

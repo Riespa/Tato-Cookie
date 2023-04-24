@@ -1,0 +1,279 @@
+:root {
+  --color-chocolate: #6b4c41; /* Marrón oscuro */
+  --color-beige: #f4deb3; /* Beige */
+  --color-blanco: #ffffff; /* Blanco */
+  --color-amarillo: #f7dc6f; /* Amarillo claro */
+  --color-naranja: #ffa07a; /* Naranja claro */
+  --flag-yellow: #ffc300;
+  --flag-blue: #003893;
+  --flag-red: #ce1126;
+  --font-normal: "Poppins", sans-serif;
+  --font-cookie: "Alkatra", sans-serif;
+}
+
+body {
+  font-family: var(--font-normal);
+}
+
+.neumorphic-text-container {
+  padding: 130px;
+}
+
+h1 {
+  font-family: var(--font-normal);
+  font-weight: Bold;
+  text-align: start;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  background-color: transparent;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.logo-container img {
+  max-width: 20%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-chocolate);
+}
+
+/* Banner style */
+.banner-container {
+  position: relative;
+  /* width: 100%; */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Animated Cookie */
+.animatedCookie {
+  position: absolute;
+  width: 50%;
+  top: 50px;
+  right: 80px;
+  z-index: 2;
+}
+
+.animatedCookie {
+  animation: spin 15s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+/* Estilos sticky navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--color-blanco);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sticky .container {
+  width: 100%;
+}
+
+/* Estilos navbar transparente */
+.navbar-container.transparent {
+  background-color: transparent;
+}
+
+.navbar-container.white {
+  background-color: var(--color-blanco);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.solid {
+  background-color: var(--color-blanco);
+}
+
+/* Estilo sloganSection */
+.neumorphic-section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 60px;
+  align-items: center;
+  align-content: center;
+}
+
+.neumorphic-text-container h1 {
+  font-family: var(--font-cookie);
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.neumorphic-text-container .flagColor-yellow {
+  color: var(--flag-yellow);
+}
+
+.neumorphic-text-container .flagColor-blue {
+  color: var(--flag-blue);
+}
+
+.neumorphic-text-container .flagColor-red {
+  color: var(--flag-red);
+}
+
+.neumorphic-text-container p {
+  font-family: var(--font-cookie);
+  /* font-weight: bold; */
+  font-size: 25px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.neumophic-image {
+  width: 860px;
+  height: auto;
+  background: var(--color-blanco);
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* Section imageMosaic */
+
+.image-mosaic-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 35px;
+  /* background: var(--color-beige); */
+}
+
+.text-container {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.text-container p {
+  padding: 0 120px;
+  font-family: var(--font-cookie);
+  font-size: 25px;
+}
+
+.image-gallery-container {
+  width: 50%;
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(2, auto); */
+  /* grid-gap: 1rem; */
+}
+
+.image-gallery-container .cookieBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(3, auto); */
+  /* grid-gap: 1rem; */
+}
+
+.image-gallery-container img {
+  width: 30%;
+  margin-right: 10px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* CallToAction */
+
+.callToAction {
+  background-image: url("../images/tatoBackgroundImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.callToAction .cookieBackground {
+  /* background-image: url("../images/top-view-chocolate-cookies.jpg"); */
+  /* background-color: var(--color-blanco); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.callToAction h2 {
+  font-family: var(--font-cookie);
+  font-size: 5rem;
+  color: #45322e;
+  text-align: center;
+}
+
+/* Global styles for makingCookies.js */
+ul,
+li {
+  list-style: none;
+}

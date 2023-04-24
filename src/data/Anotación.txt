@@ -1,0 +1,8 @@
+Estructura de un carrusel de imagenes
+https://codepen.io/ryasan86/pen/QXwEbM
+
+Estructura de las cards
+https://codepen.io/olhilton/details/dXaqxE
+
+AI Colors
+https://aicolors.co/

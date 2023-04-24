@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "img": "../images/best-chocolate-chip-cookies.png",
+    "name": "Chocolate Chip Cookies",
+    "desc": "Classic cookies made with high-quality ingredients.",
+    "weight": "1 lb",
+    "price": "$10.99"
+  },
+  {
+    "id": 2,
+    "img": "../images/double-chocolate-chip-cookies.png",
+    "name": "Double Chocolate Chip Cookies",
+    "desc": "Rich and fudgy cookies that will satisfy any chocolate lover.",
+    "weight": "1 lb",
+    "price": "$12.99"
+  },
+  {
+    "id": 3,
+    "img": "../images/oatmeal-raisin-cookies.png",
+    "name": "Oatmeal Raisin Cookies",
+    "desc": "Soft and chewy cookies with a hint of cinnamon.",
+    "weight": "1 lb",
+    "price": "$9.99"
+  },
+  {
+    "id": 4,
+    "img": "../images/peanut-butter-cookies.png",
+    "name": "Peanut Butter Cookies",
+    "desc": "Classic cookies made with all-natural peanut butter.",
+    "weight": "1 lb",
+    "price": "$11.99"
+  },
+  {
+    "id": 5,
+    "img": "../images/red-vervet-cookies.png",
+    "name": "Red Vervet Cookies",
+    "desc": "Crunchy cookies with pieces of dried cranberries and white chocolate chips.",
+    "weight": "1 lb",
+    "price": "$13.99"
+  },
+  {
+    "id": 6,
+    "img": "../images/macadamia-cookies.png",
+    "name": "Macadamia Cookies",
+    "desc": "Rich and buttery cookies filled with Macadamia nuts.",
+    "weight": "1 lb",
+    "price": "$14.99"
+  },
+  {
+    "id": 7,
+    "img": "../images/white-chocolate-cookies.png",
+    "name": "White Chocolate Cookies",
+    "desc": "Soft and chewy cookies with chunks of white chocolate.",
+    "weight": "1 lb",
+    "price": "$15.99"
+  },
+  {
+    "id": 8,
+    "img": "../images/oatmeal-cookies.png",
+    "name": "Oatmeal Cookies",
+    "desc": "Healthy cookies made with whole grain oats, raisins and a hint of cinnamon.",
+    "weight": "1 lb",
+    "price": "$10.99"
+  }
+]
