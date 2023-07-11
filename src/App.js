@@ -6,8 +6,10 @@ import SloganSection from "./scenes/sloganSection";
 import ImageMosaic from "./scenes/imageMosaic";
 import CallToAction from "./scenes/callToAction";
 import ChocolateChipCarousel from "./scenes/ChocolateChipCarousel";
-import MakingCookies from "./scenes/makingCookies";
+// import MakingCookies from "./scenes/makingCookies";
+import MakingCookiesIngredients from "./components/ingredients"
 import "./App.css";
+// import MakingCookiesIngredients from "./scenes/makingCookies2";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
       <ImageMosaic />
       <CallToAction />
       <ChocolateChipCarousel />
-      <MakingCookies />
+      <MakingCookiesIngredients />
     </div>
   );
 }

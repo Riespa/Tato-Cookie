@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/cookieProductCard.css";
 
 class Button extends React.Component {
   handleClick = () => {

@@ -1,9 +1,37 @@
-.card {
-    /* background-color: #F4DEB3; */
+@import url(./global.css);
+
+.ingrediente_stepByStep {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 30px;
+    height: 470px;
+}
+
+.ingredientes {
+    border: 1px solid red;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.cookieSteps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cookieSteps .card {
+    /* background-color: #F4DEB3; */
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .card h2 {

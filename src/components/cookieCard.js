@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/cookieProductCard.css";
 
 const CookieCard = ({name, img, desc, price}) => {
     return (
